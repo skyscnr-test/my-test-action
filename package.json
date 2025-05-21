@@ -1,0 +1,18 @@
+{
+  "name": "my-test-action",
+  "version": "1.0.0",
+  "description": "A simple JavaScript GitHub Action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "github",
+    "action"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  }
+}

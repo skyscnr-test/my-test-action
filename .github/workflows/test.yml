@@ -1,0 +1,12 @@
+name: Test Simple JS Action
+on:
+  workflow_dispatch:
+jobs:
+  greet:
+    runs-on: ubuntu-latest-small
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run my-test-action
+        uses: ./
+        with:
+          who-to-greet: 'GitHub Copilot'
