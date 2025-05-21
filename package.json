@@ -4,7 +4,8 @@
   "description": "A simple JavaScript GitHub Action",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "echo \"No tests specified\" && exit 0",
+    "build": "ncc build index.js -o build"
   },
   "keywords": [
     "github",
@@ -14,5 +15,8 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.10.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.0"
   }
 }
