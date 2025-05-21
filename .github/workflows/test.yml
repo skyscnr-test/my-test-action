@@ -1,6 +1,12 @@
 name: Test Simple JS Action
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
   greet:
     runs-on: ubuntu-latest-small
